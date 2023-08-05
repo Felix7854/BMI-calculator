@@ -9,19 +9,23 @@
 </head>
 <body>
 
-    <!-- FIRST SECTION -->
-    <section class="hero">
+    <main class="main">
+         <!-- FIRST SECTION -->
+    <section class="container">
         <!-- first frame -->
         <div class="frame-1">
             <div class="image-circle">
-                <img src="assests/images/" alt="">
+                <img src="" alt="">
             </div>
-            <div class="header">
-                <h1>Body Mass Index Calculator</h1>
+            <div class="script">
+                <div class="header">
+                    <h1>Body Mass Index Calculator</h1>
+                </div>
+                <div class="small-text first-text">
+                    <p>Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+                </div>
             </div>
-            <div class="text">
-                <p>Better understand your weight in relation to yur height using our body mass index (BMI) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable startung point to evlauate your overall health and well-being</p>
-            </div>
+            
         </div>
 
         <!-- second frame -->
@@ -33,14 +37,59 @@
                 <p>Enter your details below</p>
             </div>
             <div class="measurements">
-                <label for="metric">
-                    <input type="radio" id="metric" value="Metric" name="measurement_system"> Metric
-                </label>
-                <label for="imperial">
-                    <input type="radio" id="imperial" value="Imperial" name="measurement_system"> Imperial
-                </label>
+                <div class="radio-button">
+                    <label for="metric" class="small-text">
+                        <input type="radio" id="metric" value="Metric" name="measurement_system"> <p>Metric</p>
+                    </label>
+                </div>
+                <div class="radio-button">
+                    <label for="imperial" class="small-text">
+                        <input type="radio" id="imperial" value="Imperial" name="measurement_system"> <p>Imperial</p> 
+                    </label>
+                </div>
+                
             </div>
+            <div class="measurement-container">
+                <div class="details-container">
+                    <div class="details">
+                        <label for="height">Height</label>
+                    </div>
+                    <div class="measure-system">
+                        <input type="text" id="height" name="height" placeholder="65">
+                        <p>cm</p>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="details">
+                        <label for="weight">Weight</label>
+                    </div>
+                    <div class="measure-system">
+                        <input type="text" name="weight" id="weight" placeholder="45">
+                        <p>kg</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results">
+                <div class="storage">
+                    <div class="concatenated">
+                        <div class="last-text">
+                            <p>Your BMI is...</p>
+                        </div>
+                        <div class="value">
+                            23.4
+                        </div>
+                    </div>
+                </div>
+                <div class="string-value">
+                    <p>Your BMI suggests you’re a healthy weight. Your ideal weight is between <span class="bold">63.3kgs</span> - <span class="bold">85.2kgs</span>.</p>
+                </div>
+            </div>
+            
+            
         </div>
     </section>
+    </main>
+   
 </body>
 </html>

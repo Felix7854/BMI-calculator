@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1440px;
+}
+
+.container{
+    width: 1276px;
+    height: 737px;
+    display: flex;
+    /* justify-content: flex-end; */
+
+    /* background-color: red; */
+    margin-right: 240px;
+    margin-left: 24px;
+}
+
+.frame-1{
+    border-radius: 0px 0px 35px 35px;
+    background: linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%);
+    width: 978px;
+    height: 737px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.script{
+    width: 564px;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-left: 116px;
+    margin-right: 298px;
+    margin-top: 266px;
+    margin-bottom: 200px;
+}
+
+.header{
+    width: 465px;
+}
+
+.header h1 {
+    color: #253347;
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: -3.2px
+}
+
+.first-text{
+    width: 465px;
+    padding-right: 30px;
+}
+
+.small-text p{
+    color:#5E6E85;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;   
+}
+
+.frame-2{
+    background-color: #FFF;
+    width: 564px;
+    height: 503px;
+    margin-top: 149px;
+    margin-bottom: 86px;
+    margin-left: -279px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+    align-items: flex-start; 
+    border-radius: 16px;
+    background:#FFF;
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+}
+
+.text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+
+.measurements{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.radio-button{
+    display: flex;
+    width: 40%;
+}
+
+ .measurements label{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex: 1 0 0;
+}
+
+.measurement-container{
+    display: flex;
+    width: 500px;
+    gap: 24px;
+}
+
+.details label{
+    color: #5E6E85;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.details{
+    margin-bottom: 8px;
+}
+
+input[type=text]{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    width: 100%;
+}
+
+.measure-system{
+    display: flex;
+    padding: 20px 24px;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border: 1px solid #D8E2E7;
+    border-radius: 12px;
+    background-color: #FFF;
+}
+
+.measure-system p {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    color: #345FF6;
+}
+
+.results{
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 16px 999px 999px 16px;
+    background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
+}
+
+.concatenated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    width: 206px;
+}
+
+.last-text{
+    width: 117px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+}
+
+.value{
+    color:  #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; 
+    letter-spacing: -3.2px;
+}
+
+.string-value{
+    width: 240px;
+}
+
+.string-value p{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.bold{
+    color: var(--pure-white, #FFF);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
