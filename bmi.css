@@ -592,6 +592,7 @@ img {
         width: 768px;
         height: 503px;
         flex-shrink: 0;
+        background-color: fade(#FFFFFF, 50%);
         background: linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%);
         margin-top: 226px;
         border-radius: 35px;
@@ -684,8 +685,13 @@ img {
 /* For mobile view only */
 
 @media only screen and (max-width: 400px) {
-    body {
+    html, body {
         width: 375px;
+        overflow-x: hidden;
+    }
+
+    .hide-main{
+        display: none;
     }
 
     .container{
@@ -803,7 +809,7 @@ img {
     }
 
     .frame-3{
-        width: 375px;
+        width: 200px;
         height: 257.979px;
         flex-shrink: 0;
     }
