@@ -4,3 +4,4 @@ index.html, bmi.ts and bmi.css
 Make a preliminary drawing to allocate the sections and divisions
 Body will have 4 sections
 Created a folder for the images and icons
+adding typescript to make the project interative

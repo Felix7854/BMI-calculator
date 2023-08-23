@@ -73,6 +73,7 @@ body{
 .frame-2{
     background-color: #FFF;
     width: 564px;
+    height: 554px;
     margin-top: 149px;
     margin-bottom: 86px;
     margin-left: -279px;
@@ -148,6 +149,53 @@ input[type=text]{
     line-height: normal;
     letter-spacing: -1.2px;
     width: 100%;
+    border: none;
+}
+
+.imperial-containers{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+}
+
+
+.imperial-system{
+    display: flex;
+    padding: 20px 24px;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    border-radius: 12px;
+    border: 1px solid  #D8E2E7;
+    background:  #FFF;
+    gap: 24px;
+}
+
+.imperial-system p{
+    color: #345FF6;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+
+.unit{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.imperial-system #imperial-height{
+    width: 134px;
+}
+
+.imperial-system #imperial-height-2{
+    width: 134px;
+}
+.imperial-system #imperial-weight{
+    width: 134px;
 }
 
 .measure-system{
@@ -159,6 +207,14 @@ input[type=text]{
     border: 1px solid #D8E2E7;
     border-radius: 12px;
     background-color: #FFF;
+}
+
+.active{
+    display: block;
+}
+
+.in-active{
+    display: none !important;
 }
 
 .measure-system p {
@@ -192,7 +248,53 @@ input[type=text]{
     width: 206px;
 }
 
+.concatenated-imperial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    width: 206px;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.welcome h3{
+color: #FFF;
+font-family: 'Inter', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -1.2px;
+align-self: stretch;
+}
+
+.welcome p{
+    color:#FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
 .last-text{
+    width: 117px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+}
+
+.last-text-imperial{
     width: 117px;
     color: #FFF;
     font-family: 'Inter', sans-serif;
@@ -212,11 +314,34 @@ input[type=text]{
     letter-spacing: -3.2px;
 }
 
+.value-imperial{
+    color:  #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; 
+    letter-spacing: -3.2px;
+}
+
 .string-value{
     width: 240px;
 }
 
+.imperial-value{
+    width: 240px;
+}
+
 .string-value p{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.imperial-value p{
     color: #FFF;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
@@ -302,7 +427,7 @@ img {
    background: linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%);
    margin-top: 96px;
    border-radius: 35px;
-   /* opacity: 0.25; */
+   opacity: 0.25;
 }
 
 .sub-container-2{
@@ -311,12 +436,17 @@ img {
     margin-right: 117px;
     gap: 32px;    
     flex-shrink: 0;
+    z-index: 99;
 }
 
-.text-container{
+.text-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.text-3{
+    /* z-index: 99; */
 }
 
 .card-icon img{
@@ -524,6 +654,7 @@ img {
     .frame-2{
         display: flex;
         width: 686px;
+        height: 554px;
         margin-left: 39px;
         margin-top: -160px;
         padding: 32px;
@@ -907,5 +1038,22 @@ img {
     .center-card {
        margin-bottom: 24px;
         margin-left: -24px;
+    }
+
+    .imperial-system{
+        width: 134px;
+    }
+
+    .imperial-system #imperial-weight{
+        width: 51px;
+    }
+    .imperial-system #imperial-weight-2{
+        width: 51px;
+    }
+    .imperial-system #imperial-height{
+        width: 51px;
+    }
+    .imperial-system #imperial-height-2{
+        width: 51px;
     }
   }

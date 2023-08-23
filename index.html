@@ -43,19 +43,20 @@
                     </label>
                 </div>
                 <div class="radio-button">
-                    <label for="imperial" class="small-text">
-                        <input type="radio" id="imperial" value="Imperial" name="measurement_system"> <p>Imperial</p> 
+                    <label for="imperial-radio" class="small-text">
+                        <input type="radio" id="imperial-radio" value="Imperial" name="measurement_system"> <p>Imperial</p> 
                     </label>
                 </div>
                 
             </div>
+            <!-- metric system -->
             <div class="measurement-container">
                 <div class="details-container">
                     <div class="details">
                         <label for="height">Height</label>
                     </div>
                     <div class="measure-system">
-                        <input type="text" id="height" name="height" placeholder="65">
+                        <input type="text" id="height" name="height" placeholder="0">
                         <p>cm</p>
                     </div>
                 </div>
@@ -64,25 +65,85 @@
                         <label for="weight">Weight</label>
                     </div>
                     <div class="measure-system">
-                        <input type="text" name="weight" id="weight" placeholder="45">
+                        <input type="text" name="weight" id="weight" placeholder="0">
                         <p>kg</p>
                     </div>
                 </div>
             </div>
             
+            <!-- imperial system -->
+            <div class="imperial-containers">
+                <div class="imperial-container">
+                    <div class="imperial">
+                        <label for="imperial-height">Height</label>
+                        <label for="imperial-height-2"></label>
+                    </div>
+                    <div class="unit">
+                        <div class="imperial-system">
+                            <input type="text" id="imperial-height" name="height" placeholder="0">
+                            <p>ft</p>
+                        </div>
+                        <div class="imperial-system">
+                            <input type="text" id="imperial-height-2" name="height" placeholder="0">
+                            <p>in</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="imperial-container">
+                    <div class="imperial">
+                        <label for="imperial-weight">Weight</label>
+                        <label for="imperial-weight-2"></label>
+                    </div>
+                    <div class="unit">
+                        <div class="imperial-system">
+                            <input type="text" name="imperial-weight" id="imperial-weight" placeholder="0">
+                            <p>st</p>
+                        </div>
+                        <div class="imperial-system">
+                            <input type="text" name="imperial-weight-2" id="imperial-weight-2" placeholder="0">
+                            <p>lbs</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
             <div class="results">
+                <div class="welcome">
+                    <h3>Welcome!</h3>
+                    <p>Enter your height and weight and you’ll see your BMI result here</p>
+                </div>
                 <div class="storage">
                     <div class="concatenated">
                         <div class="last-text">
                             <p>Your BMI is...</p>
                         </div>
                         <div class="value">
-                            23.4
+                            
                         </div>
                     </div>
                 </div>
-                <div class="string-value">
+
+                 <!--imperial  -->
+                <div class="storage-imperial">
+                    <div class="concatenated-imperial">
+                        <div class="last-text-imperial">
+                            <p>Your BMI is...</p>
+                        </div>
+                        <div class="value-imperial">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- metric -->
+                 <div class="string-value">
                     <p>Your BMI suggests you’re a healthy weight. Your ideal weight is between <span class="bold">63.3kgs</span> - <span class="bold">85.2kgs</span>.</p>
+                </div>
+                <!-- imperial -->
+                <div class="imperial-value">
+                    <p>Your BMI suggests you’re a healthy weight. Your ideal weight is between <span class="bold">6lbs - 12st 10lbs</span>.</p>
                 </div>
             </div>
             

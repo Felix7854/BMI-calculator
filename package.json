@@ -1,0 +1,15 @@
+{
+  "name": "bmi-calculator",
+  "version": "1.0.0",
+  "description": "A BMI calculator app fully known as a Body mass index calculator is used for calculating the body weight of aperson\r list of things needed to create the app\r index.html, bmi.ts and bmi.css\r Make a preliminary drawing to allocate the sections and divisions\r Body will have 4 sections\r Created a folder for the images and icons\r adding typescript to make the project interative",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
