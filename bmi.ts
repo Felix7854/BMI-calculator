@@ -24,6 +24,7 @@ metricRadio?.addEventListener("click", toggleToMetric);
 
 function toggleToImperail(){
 measure?.classList.add("in-active");
+imperial?.classList.remove("in-active");
 }
 
 function toggleToMetric(){

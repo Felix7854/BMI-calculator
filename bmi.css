@@ -427,7 +427,7 @@ img {
    background: linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%);
    margin-top: 96px;
    border-radius: 35px;
-   opacity: 0.25;
+   /* opacity: 0.25; */
 }
 
 .sub-container-2{

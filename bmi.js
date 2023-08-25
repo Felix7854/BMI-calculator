@@ -18,14 +18,11 @@ imperialRadio === null || imperialRadio === void 0 ? void 0 : imperialRadio.addE
 metricRadio === null || metricRadio === void 0 ? void 0 : metricRadio.addEventListener("click", toggleToMetric);
 // metricRadio?.addEventListener("load", toggleToMetric);
 function toggleToImperail() {
-    imperial === null || imperial === void 0 ? void 0 : imperial.classList.remove("in-active");
-    imperial === null || imperial === void 0 ? void 0 : imperial.classList.add("active");
     measure === null || measure === void 0 ? void 0 : measure.classList.add("in-active");
-    // smallTextImperial?.classList.remove("in-active");
-    // smallTextImperial?.classList.add("active");
+    imperial === null || imperial === void 0 ? void 0 : imperial.classList.remove("in-active");
 }
 function toggleToMetric() {
-    imperial === null || imperial === void 0 ? void 0 : imperial.classList.remove("active");
+    // imperial?.classList.remove("active");
     imperial === null || imperial === void 0 ? void 0 : imperial.classList.add("in-active");
     measure === null || measure === void 0 ? void 0 : measure.classList.remove("in-active");
     // measure?.classList.add("active");
