@@ -37,6 +37,9 @@ function calculateBMIMetric(event) {
         welcome === null || welcome === void 0 ? void 0 : welcome.classList.add("in-active");
         largeText === null || largeText === void 0 ? void 0 : largeText.classList.remove("in-active");
         smallText === null || smallText === void 0 ? void 0 : smallText.classList.remove("in-active");
+        // largeTextImperial?.classList.remove("active");
+        largeTextImperial === null || largeTextImperial === void 0 ? void 0 : largeTextImperial.classList.add("in-active");
+        smallTextImperial === null || smallTextImperial === void 0 ? void 0 : smallTextImperial.classList.add("in-active");
         var storage = document.querySelector('.value');
         var heightInput = (_a = document.querySelector('#height')) === null || _a === void 0 ? void 0 : _a.value;
         var height = parseInt(heightInput);

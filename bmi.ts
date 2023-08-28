@@ -46,6 +46,9 @@ function calculateBMIMetric(event: any): void{
     welcome?.classList.add("in-active");
     largeText?.classList.remove("in-active");
     smallText?.classList.remove("in-active");
+    // largeTextImperial?.classList.remove("active");
+    largeTextImperial?.classList.add("in-active");
+    smallTextImperial?.classList.add("in-active");
     
     let storage = document.querySelector<HTMLDivElement>('.value');
     let heightInput = document.querySelector<HTMLInputElement>('#height')?.value;
