@@ -20,7 +20,6 @@ window.addEventListener("load", (event) => {
 
 imperialRadio?.addEventListener("click", toggleToImperail);
 metricRadio?.addEventListener("click", toggleToMetric);
-// metricRadio?.addEventListener("load", toggleToMetric);
 
 function toggleToImperail(){
 measure?.classList.add("in-active");
@@ -28,13 +27,10 @@ imperial?.classList.remove("in-active");
 }
 
 function toggleToMetric(){
-    // imperial?.classList.remove("active");
     imperial?.classList.add("in-active");
     measure?.classList.remove("in-active");
-    // measure?.classList.add("active");
 }
 
-// toggleToSystem();
 
 let measure = document.querySelector<HTMLDivElement>(".measurement-container");
 measure?.addEventListener("keypress", calculateBMIMetric)
@@ -46,16 +42,23 @@ function calculateBMIMetric(event: any): void{
     welcome?.classList.add("in-active");
     largeText?.classList.remove("in-active");
     smallText?.classList.remove("in-active");
-    // largeTextImperial?.classList.remove("active");
     largeTextImperial?.classList.add("in-active");
     smallTextImperial?.classList.add("in-active");
     
     let storage = document.querySelector<HTMLDivElement>('.value');
     let heightInput = document.querySelector<HTMLInputElement>('#height')?.value;
-    let height = parseInt(heightInput);
+    let height: number = 0; 
+    
+    if(heightInput){
+        height = parseInt(heightInput);
+    }
 
     let weightInput = document.querySelector<HTMLInputElement>('#weight')?.value;
-    let weight = parseInt(weightInput);
+    let weight: number = 0; 
+    
+    if(weightInput){
+        weight = parseInt(weightInput);
+    }
 
     if(isNaN(height)){
         return;  
@@ -63,7 +66,10 @@ function calculateBMIMetric(event: any): void{
         return;
     }else {
         let bmi = (weight / ((height * height) /10000)).toFixed(1);
+        
+        if(storage){
         storage.innerHTML = bmi;
+        }
     } 
  }
 }
@@ -84,19 +90,44 @@ function calcaulateBMIImperial(event: any){
 
 
         let resultImperial = document.querySelector<HTMLDivElement>(".value-imperial");
-        // console.log(resultImperial);
-        let heightInFeetInput = document.querySelector<HTMLInputElement>("#imperial-height")?.value;
-        let heightInFeet = parseInt(heightInFeetInput);
+
+        if (resultImperial){
+            let heightInFeetInput = document.querySelector<HTMLInputElement>("#imperial-height")?.value;
+            let heightInFeet: number; 
+
+        if (typeof heightInFeetInput === "string"){
+            heightInFeet = parseInt(heightInFeetInput); 
+        }else {
+            heightInFeet = 0;
+        }
 
         let heightInInchesInout = document.querySelector<HTMLInputElement>("#imperial-height-2")?.value;
-        let heightInInches = parseInt(heightInInchesInout);
+        let heightInInches: number;
 
+        if (typeof heightInInchesInout === "string"){
+            heightInInches = parseInt(heightInInchesInout);
+        }else{
+            heightInInches = 0;
+        }
 
         let weightInStoneInput = document.querySelector<HTMLInputElement>("#imperial-weight")?.value;
-        let weightInStone = parseInt(weightInStoneInput);
+        let weightInStone: number;
+
+        if(typeof weightInStoneInput === 'string'){
+            weightInStone = parseInt(weightInStoneInput);
+        }else{
+            weightInStone = 0;
+        }
+       
 
         let weightInPoundsInput = document.querySelector<HTMLInputElement>("#imperial-weight")?.value;
-        let weightInPounds = parseInt(weightInPoundsInput);
+        let weightInPounds: number;
+        
+        if(typeof weightInPoundsInput === 'string'){
+            weightInPounds = parseInt(weightInPoundsInput);
+        }else {
+            weightInPounds = 0;
+        }
 
         if (isNaN(weightInStone)) {
             return;
@@ -111,11 +142,13 @@ function calcaulateBMIImperial(event: any){
             resultImperial.innerHTML = bmi;
             
         }
+        }
+
+        
     }
     
 }
 
-// calcaulateBMIImperial();
 
 
 
